@@ -7,10 +7,9 @@ Parsers consist of a set of parser rules either in a parser or a combined gramma
  	retstat : 'return' expr ';' ;
 ```
 
-Rules can also have alternatives separated by the | 
+Rules can also have alternatives separated by the | operator:
 
 ```
-operator:
  	stat: retstat
  	| 'break' ';'
  	| 'continue' ';'
